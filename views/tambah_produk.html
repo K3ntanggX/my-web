@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../src/server.css">
+    <link rel="stylesheet" href="../public/styles/add-produk.css">
+    <title>Tambah Produk</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <div class="bg-white rounded-lg shadow p-6 mb-5 flex items-center justify-between">
+            <h1 class="text-2xl font-semibold">Tambah Produk</h1>
+            <button id="exit-button" class="bg-red-500 text-white px-4 py-2 rounded-md">
+                <i class="fa-solid fa-right-from-bracket"></i><span class="ml-2">Keluar</span>
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-2">Nama Produk</label>
+                    <input type="text" class="input-field border w-full px-4 py-2" placeholder="Contoh: Smartphone XYZ">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-2">Kategori</label>
+                    <select class="input-field border w-full px-4 py-2">
+                        <option value="" disabled selected>Pilih Kategori</option>
+                        <option value="kategori1">ECO Racing</option>
+                        <option value="kategori2">ECO Farming</option>
+                        <option value="kategori3">LVN Colagen</option>
+                        <!-- Tambahkan opsi kategori lainnya sesuai kebutuhan -->
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-2">Harga</label>
+                    <input type="number" class="input-field border w-full px-4 py-2" placeholder="Contoh: 1000000">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-600 mb-2">Deskripsi</label>
+                    <textarea class="input-field border w-full px-4 py-2" rows="4" placeholder="Deskripsi singkat produk..."></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">
+                        Tambah Produk
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../public/scripts/dashboard.js"></script>
+    <script src="../public/scripts/tambah_produk.js"></script>
+    <script src="../src/routes/productRoutes.js"></script>
+</body>
+</html>

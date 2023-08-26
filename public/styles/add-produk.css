@@ -1,0 +1,13 @@
+/* Tambahkan ini di dalam file dashboard.css */
+.input-field {
+    /* ... kode lain ... */
+    resize: none; /* Tambahkan ini untuk mencegah resize */
+}
+
+.title {
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
